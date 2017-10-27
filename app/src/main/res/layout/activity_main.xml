@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unica.labexer_unica.MainActivity"
+    android:background="#FFEB3B">
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:textSize="17sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="90dp"
+        />
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:textSize="15sp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/tvUser"/>
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvUser"
+        android:textSize="17sp"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_toRightOf="@+id/tvPassword"
+        android:layout_below="@+id/etUser"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/btn_SharedPref"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"
+        android:layout_centerHorizontal="true"
+        android:background="#FBC02D"
+        android:layout_marginTop="230dp"
+        android:onClick="saveSharedPref"/>
+    <Button
+        android:id="@+id/btn_IntStorage"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#FBC02D"
+        android:layout_below="@+id/btn_SharedPref"
+        android:onClick="saveInternal"/>
+    <Button
+        android:id="@+id/btn_Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_IntStorage"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FBC02D"
+        android:onClick="nextActivity"
+        android:text="Next" />
+
+</RelativeLayout>
